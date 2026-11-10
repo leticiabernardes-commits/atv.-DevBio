@@ -1,0 +1,171 @@
+/* Reset básico e Rolagem Suave */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Mantém a rolagem suave para a âncora */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url("Gemini_Generated_Image_kour87kour87kour.jpg");
+  background-size: cover;       /* Ajusta a imagem para cobrir o fundo todo */
+  background-position: center;  /* Centraliza a imagem no fundo */
+  background-repeat: no-repeat; /* Impede a imagem de se repetir */
+  
+  color: #3E362E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Estilo do Perfil */
+.profile {
+  text-align: center;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid #8FBC8F; /* Verde Sálvia */
+  object-fit: cover;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.profile h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2D3B32; /* Verde Floresta Profundo */
+  margin-bottom: 6px;
+}
+
+.bio-short {
+  font-size: 0.88rem;
+  color: #6C5F53; /* Marrom médio terroso */
+  line-height: 1.4;
+  padding: 0 10px;
+}
+
+/* Container de Links */
+.links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Botões Padrão */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  background-color: #EAE5D9; /* Tom de areia claro */
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* BORDAS E CORES PERSONALIZADAS (Tons Naturais) */
+
+/* Botão 1: Verde Oliva / Sálvia */
+.btn-blue {
+  color: #3B5336;
+  border: 2px solid #8FBC8F;
+}
+.btn-blue:hover {
+  background-color: #8FBC8F;
+  color: #FFFFFF;
+}
+
+/* Botão 2: Marrom Terracota */
+.btn-pink {
+  color: #7A3E2C;
+  border: 2px solid #C88A75;
+}
+.btn-pink:hover {
+  background-color: #C88A75;
+  color: #FFFFFF;
+}
+
+/* Botão 3: Verde Musgo Profundo */
+.btn-purple {
+  color: #2D4030;
+  border: 2px solid #6B8E23;
+}
+.btn-purple:hover {
+  background-color: #6B8E23;
+  color: #FFFFFF;
+}
+
+/* Botão 4: Marrom Quente / Amêndoa */
+.btn-yellow {
+  color: #5C4033;
+  border: 2px solid #D2B48C;
+}
+.btn-yellow:hover {
+  background-color: #D2B48C;
+  color: #FFFFFF;
+}
+
+/* Cartão da Seção "Sobre Mim" */
+.about-card {
+  width: 100%;
+  background-color: #E8E2D5;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #D1C7B7;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.about-card h2 {
+  font-size: 1.2rem;
+  color: #3B5336; /* Verde Musgo */
+  margin-bottom: 12px;
+}
+
+.about-card p {
+  font-size: 0.88rem;
+  color: #4A4036;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.back-to-top {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #5B7053;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.back-to-top:hover {
+  text-decoration: underline;
+  color: #3B5336;
+}
